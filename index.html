@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luison</title>
+    <style>
+        @keyframes rgbEffect {
+            0% { color: red; }
+            33% { color: green; }
+            66% { color: blue; }
+            100% { color: red; }
+        }
+
+        @keyframes rgbBackground {
+  
+            66% { background-color: rgba(0, 255, 255, 0.8); }
+         
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(240, 240, 240, 1);
+            text-align: center;
+            animation: rgbBackground 5s infinite;
+        }
+
+        .navbar {
+            background-color: rgba(40, 40, 40, 0.9);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+            animation: rgbEffect 3s infinite;
+        }
+
+        .navbar .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar button {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar button:hover {
+            background-color: rgba(200, 200, 200, 0.9);
+        }
+
+        .section {
+            padding: 100px 20px;
+            display: none;
+        }
+
+        #inicio {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">luison</div>
+        <div class="buttons">
+            <button onclick="mostrarSeccion('inicio')">Inicio</button>
+            <button onclick="mostrarSeccion('videos')">Videos</button>
+            <button onclick="mostrarSeccion('redireccion')">Redirigir</button>
+        </div>
+    </div>
+
+    <!-- Sección: Inicio -->
+    <div id="inicio" class="section">
+        <h1>Bienvenido a mi website</h1>
+        <p>Esta es una página en Beta.</p>
+        <div class="content">
+            <img src="https://preview.redd.it/32vyt6db3joc1.png?auto=webp&s=152f2d2d443cff65c32821d8eecd2782727e2777" alt="Imagen 1">
+            <div class="bio">
+                <h2>¿que tan fuerte es steve de minecraft?</h2>
+                <p><strong>steve</strong>, aplicaremos matemáticas, pero para simplificarlo todo, haremos comparaciones con super héroes y objetos de la vida real, en Minecraft tienes un total de 36 espacios para sostener objetos y cada espacio te permite sostener un máximo de 64 tipos de objetos, el más pesado, basándonos en peso del mundo real, es un bloque de oro, cuyas medidas son de un metro cúbico. En la vida real este pesaria 19,300 kilogramos, repito que en cada espacio puedes sostener 64 de estos cubos, y como tienes 36 espacios en total, es 44,000,467 kilogramos, no termina aún, porque recuerda que al mismo tiempo puedes llevar armadura, 9 lingotes de oro hacen a un bloque de oro, así que podemos asumir que un lingote pesa 1/9 porción de un bloque de oro, que serían unos 2,144 kilogramos, un traje de armadura completo requiere de 24 lingotes de oro para construirse, que en total es 51,446.67 kilogramos, el total es 44.519 millones de kilogramos que básicamente, es lo que pesa la torre Eiffel, perdón, 6 torres Eiffel en su bolsa, y eso qué nisiquiera contamos el echo de que Steve puede saltar mientras sostiene todo esto, o el echo de que la gravedad en Minecraft es 3 veces más fuerte que la gravedad en la tierra, pero si agregamos estos factores, Steve podría sostener 355.8 millones de kilogramos en su bolsillo, o mejor dicho, casi 49 torres Eiffel, ¿Y qué chamucos es Superman?, Ya que según esto, Steve es 3,559 veces más fuerte que Superman</p>
+                <p>steve es un persona muy famoso dentro de la comunidad gamer, tiene varias canciones, animaciones y ahora muy resiente una pelicula  <em></em>  <em></em>.</p>
+                <p>17 de mayo de 2009
+Minecraft se lanzó el 17 de mayo de 2009, pero el jugador no era una entidad con el aspecto de Steve hasta el lanzamiento de la versión 0.0.15a (Prueba multijugador 1), que fue el 31 de mayo de 2009 a las 19:04 UTC.</p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRggR0gxCac4380bYjRZcVkbkddYar16gVNw&s" alt="Imagen 2">
+            <div class="bio">
+                <h2>¿porque soy leyenda es la mejor pelicula de facking world?</h2>
+                <p>pelicula creada por <strong>will smith</strong> Soy leyenda es una película de ciencia ficción y horror que se desarrolla después de una epidemia que mata a la mayor parte de la humanidad. El protagonista, Robert Neville, lucha por encontrar una cura</p>
+                <p>El final original es trágico pero poderoso, mientras que el final alternativo se acerca más al mensaje del libro y cambia la perspectiva de los infectados.
+
+En resumen, Soy leyenda no es solo una película de acción y terror; es una obra que combina emociones, ciencia ficción y una historia bien contada. </p>
+                <p</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Sección: Videos -->
+    <div id="videos" class="section">
+        <h1>Videos</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D49W1wkJx7w?si=U1Yh6oe53p2zWERV" frameborder="0" allowfullscreen></iframe>
+        <p>El primer video que se muestra aquí es un video del famoso steve de minecraft y aqui explica pq es tan poderoso</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0UdpzH7qk7k?si=_9udMJLR10YfL4VG" frameborder="0" allowfullscreen></iframe>
+        <p>El segundo video es la pelicula completa en partes de soy leyenda</p>
+    </div>
+
+    <!-- Sección: Redirección -->
+    <div id="redireccion" class="section">
+        <h1>Ir a una nueva página</h1>
+        <p>Haz clic en el siguiente botón para ser redirigido.</p>
+        <button onclick="window.location.href='https://www.roblox.com/es/users/4154917824/profile">Ir a otra página</button>
+    </div>
+
+    <script>
+        function mostrarSeccion(seccion) {
+            document.getElementById('inicio').style.display = 'none';
+            document.getElementById('videos').style.display = 'none';
+            document.getElementById('redireccion').style.display = 'none';
+            document.getElementById(seccion).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
